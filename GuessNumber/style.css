@@ -1,0 +1,100 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Header */
+#header  {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+}
+
+/* Input field */
+#input  {
+    width: 100%;
+    max-width: 300px;
+    padding: 12px;
+    font-size: 1.1rem;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: border-color 0.3s;
+}
+
+#input:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Button styling */
+#button{
+    width: 100%;
+    max-width: 300px;
+    padding: 12px;
+    background: #4CAF50;
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#button :hover {
+    background: #45a049;
+}
+
+/* Answer section */
+#answer {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #444;
+    text-align: center;
+}
+
+/* ----------------------------- */
+/* RESPONSIVE DESIGN */
+/* ----------------------------- */
+
+/* For tablets */
+@media (max-width: 768px) {
+    #header  {
+        font-size: 1.7rem;
+    }
+
+    #input,
+    #button button {
+        max-width: 260px;
+    }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    #header {
+        font-size: 1.5rem;
+    }
+
+    #input ,
+    #button  {
+        max-width: 220px;
+        padding: 10px;
+        font-size: 1rem;
+    }
+}
