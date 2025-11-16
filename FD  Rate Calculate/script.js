@@ -1,6 +1,7 @@
-let input=Number(document.getElementById('input').value)
-let result=document.getElementById('result')
+
 function button(){
+    let input=Number(document.getElementById('input').value)
+    let result=document.getElementById('result')
     let rate=0;
     if(input<3){
         rate=5.8
